@@ -8,11 +8,11 @@
 - Suponha que precisamos ordenar uma lista de objetos Product.
 
 - Podemos implementar a comparação de produtos por meio daimplementação da interface IComparable<Product>
-- 
+
 - Entretanto, desta forma nossa classe Product não fica fechada para alteração: se o critério de comparação mudar, precisaremos alterar a classe Product.
-- 
+
 - Podemos então usar outra sobrecarga do método "Sort" da classe List:
-    `public void Sort(Comparison<T> comparison)`
+  - `public void Sort(Comparison<T> comparison)`
 
 <br>
 
@@ -33,6 +33,8 @@ https://msdn.microsoft.com/en-us/library/w56d4y5z%28v=vs.110%29.aspx
 ## Programação funcional e cálculo lambda
 
 <img src='./img/1.png'>
+
+<br>
 
 ## Transparência referencial
 
