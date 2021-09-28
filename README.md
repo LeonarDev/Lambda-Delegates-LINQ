@@ -286,7 +286,7 @@ namespace Course
 
 <br>
 
-## Predicate (System)
+### Predicate (System)
 Representa um método que recebe um objeto do tipo T e retorna um valor booleano
 
 https://msdn.microsoft.com/en-us/library/bfcke1bz%28v=vs.110%29.aspx
@@ -298,3 +298,17 @@ public delegate bool Predicate<in T>(T obj);
 
 <img src='./img/3.png'>
 
+<br>
+
+### Action (System)
+Representa um método void que recebe zero ou mais argumentos
+
+https://msdn.microsoft.com/en-us/library/system.action%28v=vs.110%29.aspx
+
+```c#
+public delegate void Action();
+public delegate void Action<in T>(T obj);
+public delegate void Action<in T1, in T2>(T1 arg1, T2 arg2);
+public delegate void Action<in T1, in T2, in T3>(T1 arg1, T2 arg2, T3 arg3);
+(16 sobrecargas)
+```
