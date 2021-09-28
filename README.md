@@ -312,3 +312,107 @@ public delegate void Action<in T1, in T2>(T1 arg1, T2 arg2);
 public delegate void Action<in T1, in T2, in T3>(T1 arg1, T2 arg2, T3 arg3);
 (16 sobrecargas)
 ```
+
+<br>
+
+### Func (System)
+Representa um método que recebe zero ou mais argumentos, e retorna
+um valor
+
+https://msdn.microsoft.com/en-us/library/bb534960%28v=vs.110%29.aspx
+
+```c#
+public delegate TResult Func<out TResult>();
+public delegate TResult Func<in T, out TResult>(T obj);
+public delegate TResult Func<in T1, in T2, out TResult>(T1 arg1, T2 arg2);
+public delegate TResult Func<in T1, in T2, in T3, out TResult>(T1 arg1, T2 arg2, T3 arg3);
+(16 sobrecargas)
+```
+
+A função "Select" (pertencente ao LINQ) é uma função que aplica uma função a todos elementos de uma coleção, gerando assim uma nova coleção (do tipo IEnumerable).
+
+```c#
+List<int> numbers = new List<int> { 2, 3, 4 };
+IEnumerable<int> newList = numbers.Select(x => x * 2);
+Console.WriteLine(string.Join(" ", newList)); // 4 6 8
+```
+
+<br>
+
+### LINQ - Language Integrated Query
+- É um conjunto de tecnologias baseadas na integração de funcionalidades de consulta diretamente na linguagem C#
+  - Operações chamadas diretamente a partir das coleções
+  - Consultas são objetos de primeira classe
+  - Suporte do compilador e IntelliSense da IDE
+- Namespace: System.Linq
+- Possui diversas operações de consulta, cujos parâmetros tipicamente são expressões lambda ou expressões de sintaxe similar à SQL
+- Referência:
+  - https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/linq/index
+
+
+<img src='./img/4.png'>
+
+#### Referências
+- https://code.msdn.microsoft.com/101-LINQ-Samples-3fb9811b/view/SamplePack/1?sortBy=Popularity
+- https://code.msdn.microsoft.com/101-LINQ-Samples-3fb9811b/view/SamplePack/2?sortBy=Popularity
+- https://odetocode.com/articles/739.aspx
+
+<br>
+
+### LINQ com Lambda
+
+<img src='./img/5.png'>
+
+- Where (operação "filter" / "restrição")
+- Select (operação "map" / "projeção")
+- OrderBy, OrderByDescending, ThenBy, ThenByDescending
+- Skip, Take
+- First, FirstOrDefault Last, LastOrDefault, Single, SingleOrDefault
+- Max, Min, Count, Sum, Average, Aggregate (operação "reduce")
+- GroupBy
+
+<br>
+
+### Algebra Relacional e SQL
+
+<img src='./img/6.png'>
+
+#### Operações básicas da álgebra relacional
+- Restrição
+- Projeção
+- Produto cartesiano
+- Junção (produto cartesiano + restrição de chaves correspondentes)
+
+<img src='./img/7.png'>
+
+<img src='./img/8.png'>
+
+<img src='./img/9.png'>
+
+<img src='./img/10.png'>
+
+<br>
+
+# Exercícios
+
+### 1) Fazer um programa para ler um conjunto de produtos a partir de um arquivo em formato .csv (suponha que exista pelo menos um produto).
+
+**Em seguida mostrar o preço médio dos produtos. Depois, mostrar os nomes, em ordem decrescente, dos produtos que possuem preço inferior ao preço médio.**
+
+> Exemplo:
+
+<img src='./img/11.png'>
+
+<br>
+
+### 2) Fazer um programa para ler os dados (nome, email e salário) de funcionários a partir de um arquivo em formato .csv. 
+
+**Em seguida mostrar, em ordem alfabética, o email dos funcionários cujo salário seja superior a um dado valor fornecido pelo usuário.**
+
+**Mostrar também a soma dos salários dos funcionários cujo nome começa com a letra 'M'.**
+
+<img src='./img/12.png'>
+
+> Exemplo:
+
+<img src='./img/13.png'>
