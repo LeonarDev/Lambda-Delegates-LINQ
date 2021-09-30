@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using _5_Action.Entities;
 
-namespace _5_Action
+namespace _5_Action //representa um método void que recebe nenhum ou mais argumentos
 {
     class Program
     {

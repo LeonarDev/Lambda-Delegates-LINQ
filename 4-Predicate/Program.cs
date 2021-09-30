@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using _4_Predicate.Entities;
 
-namespace _4_Predicate
+namespace _4_Predicate // representa um método que recebe um objeto e retorna um bool
 {
     class Program
     {

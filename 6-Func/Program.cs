@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using _6_Func.Entities;
 
-namespace _6_Func
+namespace _6_Func //representa um método que recebe nenhum ou mais argumentos, retornando um valor
 {
     class Program
     {
