@@ -7,7 +7,7 @@
   
 - Suponha que precisamos ordenar uma lista de objetos Product.
 
-- Podemos implementar a comparação de produtos por meio daimplementação da interface IComparable<Product>
+- Podemos implementar a comparação de produtos por meio da implementação da interface IComparable<Product>
 
 - Entretanto, desta forma nossa classe Product não fica fechada para alteração: se o critério de comparação mudar, precisaremos alterar a classe Product.
 
